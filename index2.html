@@ -9,7 +9,12 @@
 </head>
 <body>
 
-  <h1>Shopping Cart</h1>
+  <h1>Shopping Cart Order Id - O1234</h1>
+  <form id="order" method="POST" action="http://localhost:8080/order/api/v1/checkout">
+       <input type="hidden" id="merchantorderid" name="merchantorderid" value="O1234">
+       <input type="hidden" id="merchantid" name="merchantid" value="m1234">
+       <input  type="hidden" id="secretkey" name="secretkey" value="09965885982072791177">
+       <input  type="hidden" id="orderdate" name="orderdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
 
   <div class="shopping-cart">
 
@@ -23,103 +28,189 @@
     </div>
 
     <div class="product">
+      <input type="hidden" name="orderitems[0].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[0].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[0].merchantproductid" value="1112"></input>
+      <input type="hidden" name="orderitems[0].productbrand" value="Decathalon"></input>
+      <input type="hidden" name="orderitems[0].size" value="L"></input>
+      <input type="hidden" name="orderitems[0].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[0].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[0].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[0].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[0].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[0].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[0].vat" value="0"></input>
+      <input type="hidden" name="orderitems[0].sku" value=""></input>
+      <input type="hidden" name="orderitems[0].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[0].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[0].originalprice" value="1499"/>
+      <input type="hidden" name="orderitems[0].productimage" value="https://media.decathlon.in/207375/soft-140-summer-men-s-active-walking-shoes-black-white.jpg"/>
+      <input type="hidden" name="orderitems[0].productdescription" value="Soft 140 Mesh Men's Fitness Walking Shoes - Black/White"/>
+      <input type="hidden" name="orderitems[0].productname" value="Shoes"/>
       <div class="product-image">
-        <img src="images/Rectangle 3.png">
+        <img src="https://media.decathlon.in/207375/soft-140-summer-men-s-active-walking-shoes-black-white.jpg">
       </div>
       <div class="product-details">
-        <div class="product-title">T-Shirt</div>
-        <p class="product-description">Nike T-Shirt</p>
+        <div class="product-title">Shoes</div>
+        <p class="product-description">Soft 140 Mesh Men's Fitness Walking Shoes - Black/White</p>
       </div>
-      <div class="product-price">25.99</div>
+      <div class="product-price">1499</div>
       <div class="product-quantity">
-        <input type="number" value="2" min="1">
+        <input name="orderitems[0].quantity" type="number" value="2" min="1">
       </div>
       <div class="product-removal">
         <button class="remove-product">
           Remove
         </button>
       </div>
-      <div class="product-line-price">25.98</div>
+      <div class="product-line-price">1499</div>
     </div>
-  <div class="product">
+
+    <div class="product">
+        <input type="hidden" name="orderitems[1].deliverydate" name="orderitems[1].deliverydate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+        <input type="hidden" name="orderitems[1].shippingdate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+        <input type="hidden" name="orderitems[1].merchantproductid" class="col-md-3 form-control" value="1113"></input>
+        <input type="hidden" name="orderitems[1].productbrand" class="col-md-3 form-control" value="Decathalon"></input>
+        <input type="hidden" name="orderitems[1].size" class="col-md-3 form-control" value="L"></input>
+        <input type="hidden" name="orderitems[1].discountpercent" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].discountamount" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].coupondiscount" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].servicecharge" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].shippingcharge" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].servicetax" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].vat" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].sku" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[1].customfield2" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[1].customfield1" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[1].originalprice" value="1999"/>
+        <input type="hidden" name="orderitems[1].productimage" value="https://media.decathlon.in/320009/arpenaz-women-s-hybrid-nature-hiking-pullover-ink.jpg"/>
+        <input type="hidden" name="orderitems[1].productdescription" value="NH500 HYBRID WOMEN'S HIKING PULLOVER - INK BLUE"/>
+        <input type="hidden" name="orderitems[1].productname" value="Pullover"/>
         <div class="product-image">
-          <img src="images/Rectangle 3.png">
+          <img src="https://media.decathlon.in/320009/arpenaz-women-s-hybrid-nature-hiking-pullover-ink.jpg">
         </div>
         <div class="product-details">
-          <div class="product-title">T-Shirt</div>
-          <p class="product-description">Nike T-Shirt</p>
+          <div class="product-title">Pullover</div>
+          <p class="product-description">NH500 HYBRID WOMEN'S HIKING PULLOVER - INK BLUE</p>
         </div>
-        <div class="product-price">25.99</div>
+        <div class="product-price">1999</div>
         <div class="product-quantity">
-          <input type="number" value="2" min="1">
+          <input name="orderitems[1].quantity" type="number" value="2" min="1">
         </div>
         <div class="product-removal">
           <button class="remove-product">
             Remove
           </button>
         </div>
-        <div class="product-line-price">25.98</div>
-      </div>
+        <div class="product-line-price">1999</div>
+    </div>
+
     <div class="product">
+          <input type="hidden" name="orderitems[2].deliverydate" name="orderitems[2].deliverydate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+          <input type="hidden" name="orderitems[2].shippingdate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+          <input type="hidden" name="orderitems[2].merchantproductid" class="col-md-3 form-control" value="1113"></input>
+          <input type="hidden" name="orderitems[2].productbrand" class="col-md-3 form-control" value="Tri160"></input>
+          <input type="hidden" name="orderitems[2].size" class="col-md-3 form-control" value="L"></input>
+          <input type="hidden" name="orderitems[2].discountpercent" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].discountamount" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].coupondiscount" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].servicecharge" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].shippingcharge" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].servicetax" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].vat" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].sku" class="col-md-3 form-control" value=""></input>
+          <input type="hidden" name="orderitems[2].customfield2" class="col-md-3 form-control" value=""></input>
+          <input type="hidden" name="orderitems[2].customfield1" class="col-md-3 form-control" value=""></input>
+          <input type="hidden" name="orderitems[2].originalprice" value="1799"/>
+          <input type="hidden" name="orderitems[2].productimage" value="https://media.decathlon.in/211857/tr760-adult-tennis-racket-blue.jpg"/>
+          <input type="hidden" name="orderitems[2].productdescription" value="TR160 ADULT TENNIS RACKET - tr760-adult-tennis-racket-blue"/>
+          <input type="hidden" name="orderitems[2].productname" value="Tennis Racket"/>
           <div class="product-image">
-            <img src="images/Rectangle 3.png">
+            <img src="https://media.decathlon.in/211857/tr760-adult-tennis-racket-blue.jpg">
           </div>
           <div class="product-details">
-            <div class="product-title">T-Shirt</div>
-            <p class="product-description">Nike T-Shirt</p>
+            <div class="product-title">Tennis Racket</div>
+            <p class="product-description">TR160 ADULT TENNIS RACKET - tr760-adult-tennis-racket-blue</p>
           </div>
-          <div class="product-price">25.99</div>
+          <div class="product-price">1799</div>
           <div class="product-quantity">
-            <input type="number" value="2" min="1">
+            <input name="orderitems[2].quantity" type="number" value="1" min="1">
           </div>
           <div class="product-removal">
             <button class="remove-product">
               Remove
             </button>
           </div>
-          <div class="product-line-price">25.98</div>
-        </div>
+          <input type="hidden" name="orderitems[2].originalprice" value="1799"/>
+          <div class="product-line-price">1799</div>
+    </div>
 
     <div class="product">
-      <div class="product-image">
-        <img src="images/Rectangle 3 Copy.png">
-      </div>
-      <div class="product-details">
-        <div class="product-title">T-Shirt</div>
-        <p class="product-description">US Polo</p>
-      </div>
-      <div class="product-price">45.99</div>
-      <div class="product-quantity">
-        <input type="number" value="1" min="1">
-      </div>
-      <div class="product-removal">
-        <button class="remove-product">
-          Remove
-        </button>
-      </div>
-      <div class="product-line-price">45.99</div>
+        <input type="hidden" name="orderitems[3].deliverydate" name="orderitems[3].deliverydate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+        <input type="hidden" name="orderitems[3].shippingdate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+        <input type="hidden" name="orderitems[3].merchantproductid" class="col-md-3 form-control" value="1115"></input>
+        <input type="hidden" name="orderitems[3].productbrand" class="col-md-3 form-control" value="Doymos"></input>
+        <input type="hidden" name="orderitems[3].size" class="col-md-3 form-control" value="L"></input>
+        <input type="hidden" name="orderitems[3].discountpercent" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].discountamount" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].coupondiscount" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].servicecharge" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].shippingcharge" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].servicetax" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].vat" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].sku" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[3].customfield2" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[3].customfield1" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[3].originalprice" value="299"/>
+        <input type="hidden" name="orderitems[3].productimage" value="https://media.decathlon.in/88695/breathe-fitness-t-shirt-black.jpg"/>
+        <input type="hidden" name="orderitems[3].productdescription" value="ENERGY FITNESS T-SHIRT - BLACK"/>
+        <input type="hidden" name="orderitems[3].productname" value="T-Shirt"/>
+        <div class="product-image">
+          <img src="https://media.decathlon.in/88695/breathe-fitness-t-shirt-black.jpg">
+        </div>
+        <div class="product-details">
+          <div class="product-title">T-Shirt</div>
+          <p class="product-description">ENERGY FITNESS T-SHIRT - BLACK</p>
+        </div>
+        <div class="product-price">299</div>
+        <div class="product-quantity">
+          <input name="orderitems[3].quantity" type="number" value="1" min="1">
+        </div>
+        <div class="product-removal">
+          <button class="remove-product">
+            Remove
+          </button>
+        </div>
+        <input type="hidden" name="orderitems[3].originalprice" value="299"/>
+        <div class="product-line-price">299</div>
     </div>
+
+    <input type="hidden" name="subttotal" id="subtotal" value="5596"/>
+    <input type="hidden" name="salestax" id="salestax" value="279.8"/>
+    <input type="hidden" name="shippingrate" id="shippingrate" value="15"/>
+    <input type="hidden" name="total" id="total" value="5890.8"/>
 
     <div class="totals">
       <div class="totals-item">
         <label>Subtotal</label>
-        <div class="totals-value" id="cart-subtotal">71.97</div>
+        <div class="totals-value">5596</div>
       </div>
       <div class="totals-item">
         <label>Tax (5%)</label>
-        <div class="totals-value" id="cart-tax">3.60</div>
+        <div class="totals-value">279.8</div>
       </div>
       <div class="totals-item">
         <label>Shipping</label>
-        <div class="totals-value" id="cart-shipping">15.00</div>
+        <div class="totals-value" name="shippingrate" id="shippingrate" value="15.00">15.00</div>
       </div>
       <div class="totals-item totals-item-total">
         <label>Grand Total</label>
-        <div class="totals-value" id="cart-total">90.57</div>
+        <div class="totals-value" name="total" id="total" value="5890.8">5890.8</div>
       </div>
     </div>
        
-        <button class="checkout">Checkout</button>
+        <button type="submit" class="checkout">Checkout with Xpresslane</button>
+  </form>
 
   </div>
 </body>
