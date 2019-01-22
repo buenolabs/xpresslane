@@ -10,12 +10,12 @@
 <body>
 
   <h1>Shopping Cart Order Id - OJHK127889BLR56001</h1>
-  <form id="order" method="POST" action="https://localhost:8080/order/api/v1/checkout">
+  <form id="order" method="POST" action="https://staging.xpresslane.in/order/api/v1/checkout">
        <input type="hidden" id="merchantorderid" name="merchantorderid" value="1" />
        <input type="hidden" id="merchantcartid" name="merchantcartid" value="" />
        <input type="hidden" id="merchantid" name="merchantid" value="61A91" />
        <input type="hidden" id="merchantsuccessurl" name="merchantsuccessurl" value="http://localhost:8000/xpress/successTransaction" />
-       <input type="hidden" id="merchantcarturl" name="merchantcarturl" value="http://localhost:8083/g.html" />
+       <input type="hidden" id="merchantcarturl" name="merchantcarturl" value="http://xpresslane.co/g2.html" />
        <input  type="hidden" id="secretkey" name="secretkey" value="76783823219015928676" />
        <input  type="hidden" id="orderdate" name="orderdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]" />
 
@@ -397,21 +397,24 @@
     <input type="hidden" name="subtotal" id="subtotal" value="655.00"/>
     <!-- Comment the fields to test XPR-182-->
     <input type="hidden" name="salestax" id="salestax" value="0"/>
-    <input type="hidden" name="shippingrate" id="shippingrate" value="10"/>
+    
     <input type="hidden" name="discount" id="discount" value="0"/>
     <input type="hidden" name="cashback" id="cashback" value="0"/>
     <input type="hidden" name="sgst" id="sgst" value="0"/>
     <input type="hidden" name="cgst" id="cgst" value="13.5"/> 
     <input type="hidden" name="total" id="total" value="670.00"/>
   <!-- Comment the fields to test XPR-182 -->
-    <div class="shipping_0">
+  <!-- Commented to test Shipping options XPR-241 Start-->
+  <!-- <input type="hidden" name="shippingrate" id="shippingrate" value="10"/> -->
+   <!--  <div class="shipping_0">
         <input type="hidden" name="shippingoptions[0].shippingname" value="Flat Rate"/>
         <input type="hidden" name="shippingoptions[0].shippingprice" value="5.00"/>
         <input type="hidden" name="shippingoptions[0].shippingcode" value="flatrate_flatrate"/>
         <input type="hidden" name="shippingoptions[1].shippingname" value="Xpress Checkout"/>
         <input type="hidden" name="shippingoptions[1].shippingprice" value="25.00"/>
         <input type="hidden" name="shippingoptions[1].shippingcode" value="xpressCheckout_xpressCheckout"/>
-    </div>
+    </div> -->
+    <!-- Commented to test Shipping options XPR-241 End-->
     </div>
 
     <div class="totals">
