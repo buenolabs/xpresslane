@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merchant Shopping Cart</title>
+  <link href="css/shopping.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/cart.js"></script>
+</head>
+<body>
+
+  <h1>Shopping Cart Order Id - O985982072791177</h1>
+  <form id="order" method="POST" action="https://www.xpresslane.in/order/api/v1/checkout">
+       <!-- <input type="hidden" id="merchantorderid" name="merchantorderid" value="1" />
+       <input type="hidden" id="merchantcartid" name="merchantcartid" value="" /> -->
+       <input type="hidden" id="merchantid" name="merchantid" value="m1234">
+       <!-- <input  type="hidden" id="secretkey" name="secretkey" value="09965885982072791177">
+       <input  type="hidden" id="orderdate" name="orderdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+       <input type="hidden" id="merchantsuccessurl" name="merchantsuccessurl" value="http://xpresslane.co/xpress/successTransaction" />
+       <input type="hidden" id="merchantcarturl" name="merchantcarturl" value="http://xpresslane.co/" /> -->
+       <input type="hidden" id="checksum" name="checksum" value="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" />
+
+  <div class="shopping-cart">
+
+    <div class="column-labels">
+      <label class="product-image">Image</label>
+      <label class="product-details">Product</label>
+      <label class="product-price">Price</label>
+      <label class="product-quantity">Quantity</label>
+      <label class="product-removal">Remove</label>
+      <label class="product-line-price">Total</label>
+    </div>
+
+    <div class="product">
+     <!--  <input type="hidden" name="orderitems[0].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[0].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[0].merchantproductid" value="1112"></input>
+      <input type="hidden" name="orderitems[0].productbrand" value="Decathalon"></input>
+      <input type="hidden" name="orderitems[0].size" value="L"></input>
+      <input type="hidden" name="orderitems[0].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[0].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[0].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[0].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[0].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[0].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[0].vat" value="0"></input>
+      <input type="hidden" name="orderitems[0].sku" value=""></input>
+      <input type="hidden" name="orderitems[0].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[0].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[0].originalprice" value="1499"/>
+      <input type="hidden" name="orderitems[0].productimage" value="https://media.decathlon.in/207375/soft-140-summer-men-s-active-walking-shoes-black-white.jpg"/>
+      <input type="hidden" name="orderitems[0].productdescription" value="Soft 140 Mesh Men's Fitness Walking Shoes - Black/White"/>
+      <input type="hidden" name="orderitems[0].productname" value="Shoes"/>
+      <input type="hidden" name="orderitems[0].actualprice" value="1499"/>
+      <input type="hidden" name="orderitems[0].unitprice" value="1499"/> -->
+      <div class="product-image">
+        <img src="https://media.decathlon.in/207375/soft-140-summer-men-s-active-walking-shoes-black-white.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">Shoes</div>
+        <p class="product-description">Soft 140 Mesh Men's Fitness Walking Shoes - Black/White</p>
+      </div>
+      <div class="product-price">1499</div>
+      <div class="product-quantity">
+        <input name="orderitems[0].quantity" type="number" value="2" min="1">
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">1499</div>
+    </div>
+
+    <div class="product">
+        <!-- <input type="hidden" name="orderitems[1].deliverydate" name="orderitems[1].deliverydate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+        <input type="hidden" name="orderitems[1].shippingdate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+        <input type="hidden" name="orderitems[1].merchantproductid" class="col-md-3 form-control" value="1113"></input>
+        <input type="hidden" name="orderitems[1].productbrand" class="col-md-3 form-control" value="Decathalon"></input>
+        <input type="hidden" name="orderitems[1].size" class="col-md-3 form-control" value="L"></input>
+        <input type="hidden" name="orderitems[1].discountpercent" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].discountamount" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].coupondiscount" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].servicecharge" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].shippingcharge" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].servicetax" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].vat" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[1].sku" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[1].customfield2" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[1].customfield1" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[1].originalprice" value="1999"/>
+        <input type="hidden" name="orderitems[1].productimage" value="https://media.decathlon.in/320009/arpenaz-women-s-hybrid-nature-hiking-pullover-ink.jpg"/>
+        <input type="hidden" name="orderitems[1].productdescription" value="NH500 HYBRID WOMEN'S HIKING PULLOVER - INK BLUE"/>
+        <input type="hidden" name="orderitems[1].productname" value="Pullover"/>
+        <input type="hidden" name="orderitems[1].actualprice" value="1999"/>
+        <input type="hidden" name="orderitems[1].unitprice" value="1999"/> -->
+        <div class="product-image">
+          <img src="https://media.decathlon.in/320009/arpenaz-women-s-hybrid-nature-hiking-pullover-ink.jpg">
+        </div>
+        <div class="product-details">
+          <div class="product-title">Pullover</div>
+          <p class="product-description">NH500 HYBRID WOMEN'S HIKING PULLOVER - INK BLUE</p>
+        </div>
+        <div class="product-price">1999</div>
+        <div class="product-quantity">
+          <input name="orderitems[1].quantity" type="number" value="2" min="1">
+        </div>
+        <div class="product-removal">
+          <button class="remove-product">
+            Remove
+          </button>
+        </div>
+        <div class="product-line-price">1999</div>
+    </div>
+
+    <div class="product">
+          <!-- <input type="hidden" name="orderitems[2].deliverydate" name="orderitems[2].deliverydate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+          <input type="hidden" name="orderitems[2].shippingdate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+          <input type="hidden" name="orderitems[2].merchantproductid" class="col-md-3 form-control" value="1113"></input>
+          <input type="hidden" name="orderitems[2].productbrand" class="col-md-3 form-control" value="Tri160"></input>
+          <input type="hidden" name="orderitems[2].size" class="col-md-3 form-control" value="L"></input>
+          <input type="hidden" name="orderitems[2].discountpercent" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].discountamount" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].coupondiscount" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].servicecharge" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].shippingcharge" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].servicetax" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].vat" class="col-md-3 form-control" value="0"></input>
+          <input type="hidden" name="orderitems[2].sku" class="col-md-3 form-control" value=""></input>
+          <input type="hidden" name="orderitems[2].customfield2" class="col-md-3 form-control" value=""></input>
+          <input type="hidden" name="orderitems[2].customfield1" class="col-md-3 form-control" value=""></input>
+          <input type="hidden" name="orderitems[2].originalprice" value="1799"/>
+          <input type="hidden" name="orderitems[2].productimage" value="https://media.decathlon.in/211857/tr760-adult-tennis-racket-blue.jpg"/>
+          <input type="hidden" name="orderitems[2].productdescription" value="TR160 ADULT TENNIS RACKET - tr760-adult-tennis-racket-blue"/>
+          <input type="hidden" name="orderitems[2].productname" value="Tennis Racket"/>
+          <input type="hidden" name="orderitems[2].actualprice" value="1799"/>
+          <input type="hidden" name="orderitems[2].unitprice" value="1799"/> -->
+          <div class="product-image">
+            <img src="https://media.decathlon.in/211857/tr760-adult-tennis-racket-blue.jpg">
+          </div>
+          <div class="product-details">
+            <div class="product-title">Tennis Racket</div>
+            <p class="product-description">TR160 ADULT TENNIS RACKET - tr760-adult-tennis-racket-blue</p>
+          </div>
+          <div class="product-price">1799</div>
+          <div class="product-quantity">
+            <input name="orderitems[2].quantity" type="number" value="1" min="1">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product">
+              Remove
+            </button>
+          </div>
+          <input type="hidden" name="orderitems[2].originalprice" value="1799"/>
+          <div class="product-line-price">1799</div>
+    </div>
+
+    <div class="product">
+        <!-- <input type="hidden" name="orderitems[3].deliverydate" name="orderitems[3].deliverydate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+        <input type="hidden" name="orderitems[3].shippingdate" class="col-md-3 form-control" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+        <input type="hidden" name="orderitems[3].merchantproductid" class="col-md-3 form-control" value="1115"></input>
+        <input type="hidden" name="orderitems[3].productbrand" class="col-md-3 form-control" value="Doymos"></input>
+        <input type="hidden" name="orderitems[3].size" class="col-md-3 form-control" value="M"></input>
+        <input type="hidden" name="orderitems[3].discountpercent" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].discountamount" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].coupondiscount" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].servicecharge" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].shippingcharge" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].servicetax" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].vat" class="col-md-3 form-control" value="0"></input>
+        <input type="hidden" name="orderitems[3].sku" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[3].customfield2" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[3].customfield1" class="col-md-3 form-control" value=""></input>
+        <input type="hidden" name="orderitems[3].originalprice" value="299"/>
+        <input type="hidden" name="orderitems[3].productimage" value="https://media.decathlon.in/88695/breathe-fitness-t-shirt-black.jpg"/>
+        <input type="hidden" name="orderitems[3].productdescription" value="ENERGY FITNESS T-SHIRT - BLACK"/>
+        <input type="hidden" name="orderitems[3].productname" value="T-Shirt"/>
+        <input type="hidden" name="orderitems[3].actualprice" value="299"/>
+        <input type="hidden" name="orderitems[3].unitprice" value="299"/> -->
+        <div class="product-image">
+          <img src="https://media.decathlon.in/88695/breathe-fitness-t-shirt-black.jpg">
+        </div>
+        <div class="product-details">
+          <div class="product-title">T-Shirt</div>
+          <p class="product-description">ENERGY FITNESS T-SHIRT - BLACK</p>
+        </div>
+        <div class="product-price">299</div>
+        <div class="product-quantity">
+          <input name="orderitems[3].quantity" type="number" value="1" min="1">
+        </div>
+        <div class="product-removal">
+          <button class="remove-product">
+            Remove
+          </button>
+        </div>
+        <input type="hidden" name="orderitems[3].originalprice" value="299"/>
+        <div class="product-line-price">299</div>
+    </div>
+
+    <!-- <input type="hidden" name="subtotal" id="subtotal" value="5596"/>
+    <input type="hidden" name="cgst" id="cgst" value="279.8"/>
+    <input type="hidden" name="shippingrate" id="shippingrate" value="15.00"/>
+    <input type="hidden" name="total" id="total" value="5596"/>
+    <input type="hidden" name="grandtotal" id="grandtotal" value="5890.8"/> -->
+<!-- 
+    <div class="shipping_0">
+        <input type="hidden" name="shippingoptions[0].shippingname" value="Flat Rate"/>
+        <input type="hidden" name="shippingoptions[0].shippingprice" value="5.00"/>
+        <input type="hidden" name="shippingoptions[0].shippingcode" value="flatrate_flatrate"/>
+        <input type="hidden" name="shippingoptions[1].shippingname" value="Xpress Checkout"/>
+        <input type="hidden" name="shippingoptions[1].shippingprice" value="25.00"/>
+        <input type="hidden" name="shippingoptions[1].shippingcode" value="xpressCheckout_xpressCheckout"/>
+    </div> -->
+
+    <div class="totals">
+      <div class="totals-item">
+        <label>Subtotal</label>
+        <div class="totals-value">5596</div>
+      </div>
+      <div class="totals-item">
+        <label>Tax (5%)</label>
+        <div class="totals-value">279.8</div>
+      </div>
+      <div class="totals-item">
+        <label>Shipping</label>
+        <div class="totals-value" name="shippingrate" id="shippingrate" value="15.00">15.00</div>
+      </div>
+      <div class="totals-item totals-item-total">
+        <label>Grand Total</label>
+        <div class="totals-value" name="total" id="total" value="5890.8">5890.8</div>
+      </div>
+    </div>
+       
+        <button type="submit" class="checkout">Checkout with Xpresslane</button>
+  </form>
+
+  </div>
+</body>
+</html>
