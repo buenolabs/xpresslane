@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merchant Shopping Cart</title>
+  <link href="css/shopping.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/cart.js"></script>
+</head>
+<body>
+
+  <h1>Shopping Cart Order Id - OJHK127889BLR56001</h1>
+  <form id="order" method="POST" action="https://staging.xpresslane.in/order/api/v1/checkout">
+       <!-- <input type="hidden" id="merchantorderid" name="merchantorderid" value="1" />
+       <input type="hidden" id="merchantcartid" name="merchantcartid" value="" /> -->
+       <input type="hidden" id="merchantid" name="merchantid" value="61A91" />
+       <!-- <input type="hidden" id="merchantsuccessurl" name="merchantsuccessurl" value="http://localhost:8000/xpress/successTransaction" />
+       <input type="hidden" id="merchantcarturl" name="merchantcarturl" value="http://localhost:8083/g.html" />
+       <input  type="hidden" id="secretkey" name="secretkey" value="76783823219015928676" />
+       <input  type="hidden" id="orderdate" name="orderdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]" />
+       <input  type="hidden" id="coupondiscount" name="orderdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]" /> -->
+       <input  type="hidden" id="checksum" name="checksum" value="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" />
+
+  <div class="shopping-cart">
+
+    <div class="column-labels">
+      <label class="product-image">Image</label>
+      <label class="product-details">Product</label>
+      <label class="product-price">Price</label>
+      <label class="product-quantity">Quantity</label>
+      <label class="product-removal">Remove</label>
+      <label class="product-line-price">Total</label>
+    </div>
+
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[0].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]" />
+      <input type="hidden" name="orderitems[0].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[0].merchantproductid" value="1112"></input>
+      <input type="hidden" name="orderitems[0].productbrand" value="Fresho Cauliflower"></input>
+      <input type="hidden" name="orderitems[0].size" value=""></input>
+      <input type="hidden" name="orderitems[0].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[0].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[0].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[0].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[0].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[0].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[0].vat" value="0"></input>
+      <input type="hidden" name="orderitems[0].sku" value=""></input>
+      <input type="hidden" name="orderitems[0].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[0].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[0].originalprice" value="29"/>
+      <input type="hidden" name="orderitems[0].productimage" value="//www.bigbasket.com/media/uploads/p/m/10000074_19-fresho-cauliflower.jpg"/>
+      <input type="hidden" name="orderitems[0].productdescription" value="Fresho Cauliflower, 1 pc ( approx. 400 to 600 gm)"/>
+      <input type="hidden" name="orderitems[0].productname" value="FRESHO CAULIFLOWER"/>
+      <input type="hidden" name="orderitems[0].actualprice" value="29"/>
+      <input type="hidden" name="orderitems[0].unitprice" value="29"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/m/10000074_19-fresho-cauliflower.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO CAULIFLOWER</div>
+        <p class="product-description">Fresho Cauliflower, 1 pc ( approx. 400 to 600 gm )</p>
+      </div>
+      <div class="product-price">29</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[0].quantity" type="number" value="2" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">58</div>
+    </div>
+    </div>
+
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[1].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[1].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[1].merchantproductid" value="1113"></input>
+      <input type="hidden" name="orderitems[1].productbrand" value="FRESHO MUSHROOMS - BUTTON"></input>
+      <input type="hidden" name="orderitems[1].size" value=""></input>
+      <input type="hidden" name="orderitems[1].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[1].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[1].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[1].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[1].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[1].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[1].vat" value="0"></input>
+      <input type="hidden" name="orderitems[1].sku" value=""></input>
+      <input type="hidden" name="orderitems[1].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[1].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[1].originalprice" value="50"/>
+      <input type="hidden" name="orderitems[1].productimage" value="//www.bigbasket.com/media/uploads/p/m/10000273_13-fresho-mushrooms-button.jpg"/>
+      <input type="hidden" name="orderitems[1].productdescription" value="Fresho Mushrooms - Button, 200 gm"/>
+      <input type="hidden" name="orderitems[1].productname" value="FRESHO MUSHROOMS - BUTTON"/>
+      <input type="hidden" name="orderitems[1].actualprice" value="50"/>
+      <input type="hidden" name="orderitems[1].unitprice" value="50"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/m/10000273_13-fresho-mushrooms-button.jpg"/>
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO MUSHROOMS - BUTTON</div>
+        <p class="product-description">Fresho Mushrooms - Button, 200 gm</p>
+      </div>
+      <div class="product-price">50</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[1].quantity" type="number" value="2" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">100</div>
+    </div>
+
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[2].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[2].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[2].merchantproductid" value="1114"></input>
+      <input type="hidden" name="orderitems[2].productbrand" value="FRESHO CARROT - RED"></input>
+      <input type="hidden" name="orderitems[2].size" value=""></input>
+      <input type="hidden" name="orderitems[2].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[2].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[2].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[2].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[2].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[2].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[2].vat" value="0"></input>
+      <input type="hidden" name="orderitems[2].sku" value=""></input>
+      <input type="hidden" name="orderitems[2].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[2].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[2].originalprice" value="50"/>
+      <input type="hidden" name="orderitems[2].productimage" value="//www.bigbasket.com/media/uploads/p/m/10000381_10-fresho-carrot-red.jpg"/>
+      <input type="hidden" name="orderitems[2].productdescription" value="Fresho Carrot - Red, 1 kg"/>
+      <input type="hidden" name="orderitems[2].productname" value="FRESHO CARROT - RED"/>
+      <input type="hidden" name="orderitems[2].actualprice" value="50"/>
+      <input type="hidden" name="orderitems[2].unitprice" value="50"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/m/10000381_10-fresho-carrot-red.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO CARROT - RED</div>
+        <p class="product-description">Fresho Carrot - Red, 1 kg</p>
+      </div>
+      <div class="product-price">79</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[2].quantity" type="number" value="2" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">158</div>
+    </div>
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[3].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[3].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[3].merchantproductid" value="1115"></input>
+      <input type="hidden" name="orderitems[3].productbrand" value="FRESHO TOMATO - HYBRID"></input>
+      <input type="hidden" name="orderitems[3].size" value=""></input>
+      <input type="hidden" name="orderitems[3].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[3].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[3].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[3].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[3].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[3].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[3].vat" value="0"></input>
+      <input type="hidden" name="orderitems[3].sku" value=""></input>
+      <input type="hidden" name="orderitems[3].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[3].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[3].originalprice" value="11"/>
+      <input type="hidden" name="orderitems[3].productimage" value="//www.bigbasket.com/media/uploads/p/m/10000200_17-fresho-tomato-hybrid.jpg"/>
+      <input type="hidden" name="orderitems[3].productdescription" value="Fresho Tomato - Hybrid, 1 kg ( approx. 13 to 14 nos )"/>
+      <input type="hidden" name="orderitems[3].productname" value="FRESHO TOMATO - HYBRID"/>
+      <input type="hidden" name="orderitems[3].actualprice" value="11"/>
+      <input type="hidden" name="orderitems[3].unitprice" value="11"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/m/10000200_17-fresho-tomato-hybrid.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO TOMATO - HYBRID</div>
+        <p class="product-description">Fresho Tomato - Hybrid, 1 kg ( approx. 13 to 14 nos )</p>
+      </div>
+      <div class="product-price">11</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[3].quantity" type="number" value="2" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">22</div>
+    </div>
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[4].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[4].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[4].merchantproductid" value="1116"></input>
+      <input type="hidden" name="orderitems[4].productbrand" value="FRESHO ONION"></input>
+      <input type="hidden" name="orderitems[4].size" value=""></input>
+      <input type="hidden" name="orderitems[4].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[4].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[4].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[4].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[4].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[4].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[4].vat" value="0"></input>
+      <input type="hidden" name="orderitems[4].sku" value=""></input>
+      <input type="hidden" name="orderitems[4].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[4].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[4].originalprice" value="50"/>
+      <input type="hidden" name="orderitems[4].productimage" value="//www.bigbasket.com/media/uploads/p/m/10000148_16-fresho-onion.jpg"/>
+      <input type="hidden" name="orderitems[4].productdescription" value="Fresho Onion, 1 kg ( approx. 10 to 12 nos )"/>
+      <input type="hidden" name="orderitems[4].productname" value="FRESHO ONION"/>
+      <input type="hidden" name="orderitems[4].actualprice" value="50"/>
+      <input type="hidden" name="orderitems[4].unitprice" value="50"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/m/10000148_16-fresho-onion.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO ONION</div>
+        <p class="product-description">Fresho Onion, 1 kg ( approx. 10 to 12 nos )</p>
+      </div>
+      <div class="product-price">50</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[4].quantity" type="number" value="3" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">150</div>
+    </div>
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[5].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[5].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[5].merchantproductid" value="1118"></input>
+      <input type="hidden" name="orderitems[5].productbrand" value="FRESHO POTATO - ORGANICALLY GROWN"></input>
+      <input type="hidden" name="orderitems[5].size" value=""></input>
+      <input type="hidden" name="orderitems[5].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[5].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[5].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[5].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[5].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[5].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[5].vat" value="0"></input>
+      <input type="hidden" name="orderitems[5].sku" value=""></input>
+      <input type="hidden" name="orderitems[5].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[5].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[5].originalprice" value="24"/>
+      <input type="hidden" name="orderitems[5].productimage" value="//www.bigbasket.com/media/uploads/p/m/40023476_4-fresho-potato-organically-grown.jpg"/>
+      <input type="hidden" name="orderitems[5].productdescription" value="Fresho Potato - Organically Grown, 1 kg"/>
+      <input type="hidden" name="orderitems[5].productname" value="FRESHO POTATO - ORGANICALLY GROWN"/>
+      <input type="hidden" name="orderitems[5].actualprice" value="24"/>
+      <input type="hidden" name="orderitems[5].unitprice" value="24"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/m/40023476_4-fresho-potato-organically-grown.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO POTATO - ORGANICALLY GROWN</div>
+        <p class="product-description">Fresho Potato - Organically Grown, 1 kg</p>
+      </div>
+      <div class="product-price">24</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[5].quantity" type="number" value="3" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">72</div>
+    </div>
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[6].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[6].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[6].merchantproductid" value="1119"></input>
+      <input type="hidden" name="orderitems[6].productbrand" value="FRESHO METHI"></input>
+      <input type="hidden" name="orderitems[6].size" value=""></input>
+      <input type="hidden" name="orderitems[6].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[6].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[6].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[6].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[6].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[6].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[6].vat" value="0"></input>
+      <input type="hidden" name="orderitems[6].sku" value=""></input>
+      <input type="hidden" name="orderitems[6].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[6].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[6].originalprice" value="15"/>
+      <input type="hidden" name="orderitems[6].productimage" value="//www.bigbasket.com/media/uploads/p/m/10000112_17-fresho-methi.jpg"/>
+      <input type="hidden" name="orderitems[6].productdescription" value="Fresho Methi, 250 gm"/>
+      <input type="hidden" name="orderitems[6].productname" value="FRESHO METHI"/>
+      <input type="hidden" name="orderitems[6].actualprice" value="15"/>
+      <input type="hidden" name="orderitems[6].unitprice" value="15"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/m/10000112_17-fresho-methi.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO METHI</div>
+        <p class="product-description">Fresho Methi, 250 gm</p>
+      </div>
+      <div class="product-price">15</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[6].quantity" type="number" value="2" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">30</div>
+    </div>
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[7].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[7].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[7].merchantproductid" value="1120"></input>
+      <input type="hidden" name="orderitems[7].productbrand" value="FRESHO BEANS - FRENCH RING"></input>
+      <input type="hidden" name="orderitems[7].size" value=""></input>
+      <input type="hidden" name="orderitems[7].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[7].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[7].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[7].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[7].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[7].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[7].vat" value="0"></input>
+      <input type="hidden" name="orderitems[7].sku" value=""></input>
+      <input type="hidden" name="orderitems[7].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[7].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[7].originalprice" value="10"/>
+      <input type="hidden" name="orderitems[7].productimage" value="//www.bigbasket.com/media/uploads/p/m/10000043_38-fresho-beans-french-ring.jpg"/>
+      <input type="hidden" name="orderitems[7].productdescription" value="Fresho Beans - French Ring, 250 gm"/>
+      <input type="hidden" name="orderitems[7].productname" value="FRESHO BEANS - FRENCH RING"/>
+      <input type="hidden" name="orderitems[7].actualprice" value="10"/>
+      <input type="hidden" name="orderitems[7].unitprice" value="10"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/m/10000043_38-fresho-beans-french-ring.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO BEANS - FRENCH RING</div>
+        <p class="product-description">Fresho Beans - French Ring, 250 gm</p>
+      </div>
+      <div class="product-price">10</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[7].quantity" type="number" value="2" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">20</div>
+    </div>
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[8].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]">
+      <input type="hidden" name="orderitems[8].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[8].merchantproductid" value="1121"></input>
+      <input type="hidden" name="orderitems[8].productbrand" value="Fresho Capsicum - Red 250 gm + Capsicum - Yellow 250 gm, Combo ( 2 Items )"></input>
+      <input type="hidden" name="orderitems[8].size" value=""></input>
+      <input type="hidden" name="orderitems[8].discountpercent" value="9"></input>
+      <input type="hidden" name="orderitems[8].discountamount" value="4.5"></input>
+      <input type="hidden" name="orderitems[8].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[8].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[8].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[8].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[8].vat" value="0"></input>
+      <input type="hidden" name="orderitems[8].sku" value=""></input>
+      <input type="hidden" name="orderitems[8].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[8].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[8].originalprice" value="50"/>
+      <input type="hidden" name="orderitems[8].productimage" value="//www.bigbasket.com/media/uploads/p/l/1201616_2-fresho-capsicum-red-250-gm-capsicum-yellow-250-gm.jpg"/>
+      <input type="hidden" name="orderitems[8].productdescription" value="Fresho Capsicum - Red 250 gm + Capsicum - Yellow 250 gm, Combo ( 2 Items )"/>
+      <input type="hidden" name="orderitems[8].productname" value="FRESHO CAPSICUM - RED 250 GM + CAPSICUM - YELLOW 250 GM"/>
+      <input type="hidden" name="orderitems[8].actualprice" value="45.5"/>
+      <input type="hidden" name="orderitems[8].unitprice" value="45.5"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/l/1201616_2-fresho-capsicum-red-250-gm-capsicum-yellow-250-gm.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO CAPSICUM - RED 250 GM + CAPSICUM - YELLOW 250 GM</div>
+        <p class="product-description">Fresho Capsicum - Red 250 gm + Capsicum - Yellow 250 gm, Combo ( 2 Items )</p>
+      </div>
+      <div class="product-price">45.5</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[8].quantity" type="number" value="1" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">45.5</div>
+    </div>
+
+    <!-- <input type="hidden" name="subtotal" id="subtotal" value="652.00"/>
+    <input type="hidden" name="salestax" id="salestax" value="0"/>
+    <input type="hidden" name="shippingrate" id="shippingrate" value="5"/>
+    <input type="hidden" name="shippingmethod" id="shippingmethod" value="Flat Rate"/>
+    <input type="hidden" name="shippingcode" id="shippingcode" value="flatrate_flatrate"/>
+    <input type="hidden" name="discount" id="discount" value="0"/>
+    <input type="hidden" name="cashback" id="cashback" value="0"/>
+    <input type="hidden" name="sgst" id="sgst" value="0"/>
+    <input type="hidden" name="cgst" id="cgst" value="13.5"/> 
+    <input type="hidden" name="total" id="total" value="652.00"/>
+    <input type="hidden" id="coupondiscount" name="coupondiscount" value="10" />
+    <input type="hidden" id="coupon_code" name="coupon_code" value="buenotest123" /> 
+<input type="hidden" name="grandtotal" id="grandtotal" value="660.50"/>
+ -->
+    <!-- <div class="shipping_0">
+        <input type="hidden" name="shippingoptions[0].shippingname" value="Flat Rate"/>
+        <input type="hidden" name="shippingoptions[0].shippingprice" value="5.00"/>
+        <input type="hidden" name="shippingoptions[0].shippingcode" value="flatrate_flatrate"/>
+        <input type="hidden" name="shippingoptions[1].shippingname" value="Xpress Checkout"/>
+        <input type="hidden" name="shippingoptions[1].shippingprice" value="25.00"/>
+        <input type="hidden" name="shippingoptions[1].shippingcode" value="xpressCheckout_xpressCheckout"/>
+    </div> -->
+    </div>
+
+    <div class="totals">
+      <div class="totals-item">
+        <label>Subtotal</label>
+        <div class="totals-value sub-totals">655.00</div>
+      </div>
+      <div class="totals-item">
+        <label>Tax (5%)</label>
+        <div class="totals-value" id="tax" value="0">0</div>
+      </div>
+      <div class="totals-item">
+        <label>Shipping</label>
+        <div class="totals-value" name="shippingrate1" id="shippingrate1" value="15.00">0.00</div>
+      </div>
+      <div class="totals-item totals-item-total">
+        <label>Grand Total</label>
+        <div class="totals-value" name="grand-total" id="grand-total" value="670.00">670.00</div>
+      </div>
+    </div>
+       
+        <button type="submit" class="checkout">Checkout with Xpresslane</button>
+  </form>
+
+  </div>
+</body>
+</html>
