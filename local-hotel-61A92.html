@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merchant Shopping Cart</title>
+  <link href="css/shopping.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/cart.js"></script>
+</head>
+<body>
+
+  <h1>Booking ID - OJHK127889BLR56001</h1>
+  <form id="order" method="POST" action="https://localhost:8080/order/api/v1/reserve">
+       <input type="hidden" id="merchantid" name="merchantid" value="61A92" />
+       <input  type="hidden" id="checksum" name="checksum" value="ZTk4ZDczNGVhNjg2MmRhMxUqc2mKwRj3x/jtpCVGICVZlPX52p58gZa90HZ0OENIGnqu1pAJYvcYv1BpEUSOJt5uZ83FyBl7yuxkqZ4YcZ287nVQpp4haf4XFuEknKZHy4KTHDR+tzVVcf0IOiXe503TpmUnLPvCIRcCY8kvxEKHYKSxUYyaJlVoNc3pyVYxPZbAEoJv3gYR4RsljpqTRbhwB/FdyHQI/ppj6ahiUVygDGLmnRO7znsLU/d4dm7wOdhCczc69ksHPTMSJ2j/qIIJS71HLh9mYph0S07eBQYHpGULzN9HluohhAkFFKtH+s5yIw32N7E0U1RGgU0sUPklJ1LOlQtH7eN6+RUomPIL0HOKjKjLwOAHUbeOS4A2788UaPI9tmHIbYRF2RXv09yhlG5/h0nce3dkqXORCgJnIFcugh0cKRSKsIRw7/BQ+bbvjFL7D3pw2AV7DzkDJchMWMCFBmnBEuR3XEUBPa+R4c4sSa61TZokWWVlknY/HZZXLdX6w7kTkENYxiOF1K1dlKkGpLNV8dHVWiThzByS+LVUNm9gG4veqZbdy0FSJi4+Oh5MrVXTMtmOrlvRyQXmK/UcffhZLckvcUdnJ5C1oHfkbJugUpA2iMSc3gXyBUv4eg3Xyn4dD0uaR0coXgswi6Pn3GoSXN1HzgZ6zljibOogx4EwAOwFMNibonQujFzEmuzrujKs0KQE0dM5UP3xdjCJr+KpLN1iEanGWHs9913mfdigFTCNgtKPRI+z7QkIPpEOCJ8zEDd8677nGMCAwsjalT8nIpUaZffcG+STgUf1tJ2Pjac1wVM5+VKw+MTNsrMjcxMXfHLCQsHUmfUxbUubdoe2G7mV6XZ8a8XOBnb7mPm2yY31PCvx/nCKOn3iRtJIe4mMZ5avqf6fKiplgbLvRW9xHkm/LkLssjy7J/L1vyxILyaZ23HGdXJOc0rE5gr788WQkMWxpvyyKg69Hj1daBa4qeadA4GtkLo4+xXuzisohe74X2Z9/AYRpEDQGE3doHGNTItoY+pL6Qa7KkT2XN2E4r8v5K7NaQMPM4cJSO6alrD5XxtTKsCjb00kkxwA+6Xree9/ijEAFlzKCHxll0eoTmucozDwtuEkPOp8KS2Hthjjs+NQ8bPwvi99aXoaa1j/NaEKMqRi3Rw+jW9G8QgJqMd18eWtMEldIXDuo6AQZ8it2l2N0uNIUiIz4puAAWqGGo4SMyEhuWf7yycqdnabfTM2Vl4MP1RaCcRIDZDvdxDzSoSkS9+Rbd0qeOPg2LARDbIrCwGze5DZ7xgq4VW2Spq6+dnEr3ILyxaFcDYIUS+qH4PvQfMCcphga720L0vN6nhMLotQoYT8BTR4NppB5NJs1ygWE9I=" />
+
+  <div class="shopping-cart">
+
+    <div class="column-labels">
+      <label class="product-image">Image</label>
+      <label class="product-details">Product</label>
+      <label class="product-price">Price</label>
+      <label class="product-quantity">Quantity</label>
+      <label class="product-removal">Remove</label>
+      <label class="product-line-price">Total</label>
+    </div>
+
+    <div class="product">
+      <div class="product-image">
+        <img src="http://119.81.196.237/jlr/admin/127/images/127_2027_exe%20cottage7-1.JPG">
+      </div>
+      <div class="product-details">
+        <div class="product-title">Bheemeshwari Adventure & Nature Camp</div>
+        <p class="product-description">Accomodation Type: Cottage</p>
+      </div>
+      <div class="product-price">7600.00</div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="totals">
+      <div class="totals-item">
+        <label>Subtotal</label>
+        <div class="totals-value sub-totals">5700.00</div>
+      </div>
+      <div class="totals-item">
+        <label>Tax (5%)</label>
+        <div class="totals-value" id="tax" value="0">1026.00</div>
+      </div>
+      <div class="totals-item totals-item-total">
+        <label>Grand Total</label>
+        <div class="totals-value" name="grand-total" id="grand-total" value="6726.00">6726.00</div>
+      </div>
+    </div>
+
+        <button type="submit" class="checkout">Checkout with Xpresslane</button>
+  </form>
+
+  </div>
+</body>
+</html>
