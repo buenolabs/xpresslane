@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merchant Shopping Cart</title>
+  <link href="css/shopping.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/cart.js"></script>
+</head>
+<body>
+
+  <h1>Shopping Cart Order Id - OJHK127889BLR56001</h1>
+  <form id="order" method="POST" action="https://localhost:8080/order/api/v1/checkout">
+       
+       <input type="hidden" id="merchantid" name="merchantid" value="61A91" />
+       <input  type="hidden" id="checksum" name="checksum" value="MjY4ZDRhNmMyYWM5OGYzZvHLyLBkPi7hzZfhG4dVPKJ3lSy+8Lq7W8m8uOmF8jyNI/W+PHtGYuJVRs4C3BUPkhuX+d/JhX02p6IimQfsc3TqEhRkDtNdEszufCPbzbtqV/8Fgc5JvmQ/u2r4UOs/g646pMAPBhEnv7cm7yY8FHPuJHCY1Ok3EvDPfVbH2ZZ3KjY8Qh5nX8FTEiKxo41/UN/1MUnAxMgliCKygFqLo23aR41S4vzNEU7OY+3nUMS5W1KfKC2JGqYHJ16eLWUwBEZE2eofLl8ZjKLiIY47g1Oo2tf9kgX28/3VlrpWFJQADcg5qV30CFHAau1iAskdV24p0GFCQEs+Zr1Q+QMTV7O8OlUVYQ53mFAcf3MAtfcgx6U+rYHQ5IiJMGgwtpeuaMGYc7P6S8rxDet68oURrJ11fu5cThaOvMwF41lyV9bd8T80yApC4TZbo9ALUULskC6Qb3XLePImL2vrycKR07h2MNxBusAJF43RXTYZhJSrUthMc0aPd+WuIJT2gkjKtIJJIuYiZr3KCEt9UL+IGRNJh8f+DaqyQQ1j1MpjD4izUoaNGxGb43pBTI/UwvHEvPvueKds5Ws5fjyewt6iRSkxORQct2QQyL3J+SJTG67/G0U6dGL96XSTqzShtpYzo3Qtlu8KVpWQZhaCLnq8iC4EjGws/6ipUVU9nlNqmVhVE+jyvgc5kDsST0iCI4KQqQvFhTmOXB5bgUAPM6iOilxFu1Iw4CjDh1y1QgqRTOYv9aYEpZWTZPMrOtlRU8XQ2LukknXZ+F9F5KJ7JsHIo2nJMpLNztJLyn9UuOuO5jo72IcWhGR8T0n8JEjmIjcp9dwQ6AOLC48XWnQSPSpz3ZWImc936vG0R1JoaQPetqCoIe0M3IjT44Z1yNZYqkwRz7RfM3UClg5tecvEeGdfYgHqpksimQbDuW0Rbdt5sJX/a+LkkI1mmjyPNqUTi/ueEc6tdFgD1NXQQaEEY4EphVOVJYh5yvHWmEOqC8fjBwBe8TKWVT9CVdCKu3DirGxGF1KleFB5pww6VbyANFaiHyrtTsasdn7Q0OJed4gqkHhMgkYaOmphVQoQ2fXyLXFH4OGMwXKq+x7QLkOrk15JqZKQ8+prjfdifeoZKaxlmqQrVxTvfma2JKQ1IPlMSxj1BNs+ma3VzGqv1CLJ29e0qTkgs1SXsMMHiXfK1fbGdxEpv3EccBzZX3J2pal5XEpvhhCU5cNRehXaFn4mDmColMFxaA9o2I/lDjBQwgutEy7xQYuyMwlWfcTyyuIMlUf1gnfvKu4F/VMxbnv+4ZVK12zDneshz+BCL2z30hHw/JZvcvigNpYd/D2/aSNKQaytwixtgOiUiqd6H/eLe+kOzBpEep/mrG9hPVdpO3vGYSnQ8Zt3t20au10ZdE8HacxzNu/5pK1i6iR2SVYpsr3GAQ+a10kt4yiXyfKxsJ1eFPCqb0ivUB81WB5lCFssPjcvWA==" />
+
+  <div class="shopping-cart">
+
+    <div class="column-labels">
+      <label class="product-image">Image</label>
+      <label class="product-details">Product</label>
+      <label class="product-price">Price</label>
+      <label class="product-quantity">Quantity</label>
+      <label class="product-removal">Remove</label>
+      <label class="product-line-price">Total</label>
+    </div>
+
+    <div class="product">
+      <!-- <input type="hidden" name="orderitems[0].deliverydate" value="2017-01-20T23:09:01.795Z[GMT+05:30]" />
+      <input type="hidden" name="orderitems[0].shippingdate" value="2017-01-20T23:09:01.795Z[GMT+05:30]"></input>
+      <input type="hidden" name="orderitems[0].merchantproductid" value="1112"></input>
+      <input type="hidden" name="orderitems[0].productbrand" value="Fresho Cauliflower"></input>
+      <input type="hidden" name="orderitems[0].size" value=""></input>
+      <input type="hidden" name="orderitems[0].discountpercent" value="0"></input>
+      <input type="hidden" name="orderitems[0].discountamount" value="0"></input>
+      <input type="hidden" name="orderitems[0].coupondiscount"  value="0"></input>
+      <input type="hidden" name="orderitems[0].servicecharge" value="0"></input>
+      <input type="hidden" name="orderitems[0].shippingcharge" value="0"></input>
+      <input type="hidden" name="orderitems[0].servicetax" value="0"></input>
+      <input type="hidden" name="orderitems[0].vat" value="0"></input>
+      <input type="hidden" name="orderitems[0].sku" value=""></input>
+      <input type="hidden" name="orderitems[0].customfield2" value=""></input>
+      <input type="hidden" name="orderitems[0].customfield1" value=""></input>
+      <input type="hidden" name="orderitems[0].originalprice" value="29"/>
+      <input type="hidden" name="orderitems[0].productimage" value="//www.bigbasket.com/media/uploads/p/m/10000074_19-fresho-cauliflower.jpg"/>
+      <input type="hidden" name="orderitems[0].productdescription" value="Fresho Cauliflower, 1 pc ( approx. 400 to 600 gm)"/>
+      <input type="hidden" name="orderitems[0].productname" value="FRESHO CAULIFLOWER"/>
+      <input type="hidden" name="orderitems[0].actualprice" value="29"/>
+      <input type="hidden" name="orderitems[0].unitprice" value="29"/> -->
+      <div class="product-image">
+        <img src="//www.bigbasket.com/media/uploads/p/m/10000074_19-fresho-cauliflower.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">FRESHO CAULIFLOWER</div>
+        <p class="product-description">Fresho Cauliflower, 1 pc ( approx. 400 to 600 gm )</p>
+      </div>
+      <div class="product-price">29</div>
+      <div class="product-quantity">
+        <!-- <input name="orderitems[0].quantity" type="number" value="2" min="1"> -->
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">58</div>
+    </div>
+    </div>
+
+    <div class="totals">
+      <div class="totals-item">
+        <label>Subtotal</label>
+        <div class="totals-value sub-totals">140.00</div>
+      </div>
+      <div class="totals-item">
+        <label>Tax (5%)</label>
+        <div class="totals-value" id="tax" value="0">13.50</div>
+      </div>
+      <div class="totals-item">
+        <label>Shipping</label>
+        <div class="totals-value" name="shippingrate1" id="shippingrate1" value="5.00">5.00</div>
+      </div>
+      <div class="totals-item totals-item-total">
+        <label>Grand Total</label>
+        <div class="totals-value" name="grand-total" id="grand-total" value="670.00">148.50</div>
+      </div>
+    </div>
+       
+        <button type="submit" class="checkout">Checkout with Xpresslane</button>
+  </form>
+
+  </div>
+</body>
+</html>
