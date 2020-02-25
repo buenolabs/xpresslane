@@ -1,0 +1,134 @@
+.xpressbtn {
+  width: 220px;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.xpressbtn-semi-rounded {
+  border-radius: 0.3rem;
+}
+
+.xpressbtn-rounded {
+  border-radius: 2rem;
+}
+
+svg {
+  width: 86px;
+  vertical-align: middle;
+  display: inherit;
+}
+
+.xpressbtn:focus,
+.xpressbtn:hover {
+  text-decoration: none;
+}
+
+.xpressbtn.focus,
+.xpressbtn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.xpressbtn.disabled,
+.xpressbtn:disabled {
+  opacity: 0.65;
+}
+
+.xpressbtn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.xpressbtn:not(:disabled):not(.disabled).active,
+.xpressbtn:not(:disabled):not(.disabled):active {
+  background-image: none;
+}
+
+.xpressbtn-primary {
+  color: #fff;
+  background-color: #404040;
+  border-color: #404040;
+}
+
+.xpressbtn-primary:hover {
+  color: #fff;
+  background-color: #404040;
+  border-color: #404040;
+}
+
+.xpressbtn-primary.focus,
+.xpressbtn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.xpressbtn-primary.disabled,
+.xpressbtn-primary:disabled {
+  color: #fff;
+  background-color: #404040;
+  border-color: #404040;
+}
+
+.xpressbtn-primary:not(:disabled):not(.disabled).active,
+.xpressbtn-primary:not(:disabled):not(.disabled):active,
+.show > .xpressbtn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #404040;
+  border-color: #404040;
+}
+
+.xpressbtn-primary:not(:disabled):not(.disabled).active:focus,
+.xpressbtn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .xpressbtn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.xpressbtn-secondary {
+  color: #4f4f4f;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.xpressbtn-secondary:hover {
+  color: #4f4f4f;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.xpressbtn-secondary.focus,
+.xpressbtn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.xpressbtn-secondary.disabled,
+.xpressbtn-secondary:disabled {
+  color: #4f4f4f;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.xpressbtn-secondary:not(:disabled):not(.disabled).active,
+.xpressbtn-secondary:not(:disabled):not(.disabled):active,
+.show > .xpressbtn-secondary.dropdown-toggle {
+  color: #4f4f4f;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.xpressbtn-secondary:not(:disabled):not(.disabled).active:focus,
+.xpressbtn-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .xpressbtn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
