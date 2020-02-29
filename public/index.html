@@ -25,7 +25,7 @@
         <div class="lg:order-2 w-auto lg:w-1/5 lg:text-center">
           <a class="text-xl text-indigo-500 font-semibold" href="#"
             ><img
-              src="images/JungleVacation.svg"
+              src="images/ESClogo.png"
               alt="Jungle Vacation"
               width="200"
           /></a>
@@ -48,11 +48,11 @@
           <a
             class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-blue-700"
             href="#"
-            >Cottages</a
+            >Events</a
           ><a
             class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-blue-700"
             href="#"
-            >Customers</a
+            >Registrations</a
           >
         </div>
         <div
@@ -61,7 +61,7 @@
           <a
             class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-blue-700"
             href="#"
-            >Blog</a
+            >About ESC2019</a
           ><a
             class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-blue-700"
             href="#"
@@ -79,23 +79,22 @@
           <div class="lg:w-1/2 px-4 mb-4 lg:mb-0">
             <img
               class="rounded shadow-md"
-              src="http://119.81.196.237/jlr/admin/127/images/127_2027_exe%20cottage7-1.JPG"
+              src="images/Triathlon.jpg"
               alt=""
             />
           </div>
           <div class="lg:w-1/2 px-4">
             <p class="text-gray-600 font-semibold">
-              Booking ID - OJHK127889BLR56001
+              Order ID - ESC2019-20-101
             </p>
             <h2 class="text-4xl mb-4 font-heading">
-              Bheemeshwari Adventure & Nature Camp
+              Elita ESC2019 Triathlon Competition
             </h2>
             <p class="text-gray-800 font-semibold">
-              Accomodation Type: Cottage
+              Event Type: Triathlon
             </p>
             <p class="mb-2 text-gray-500 leading-relaxed">
-              Premium cottages on a beautiful river bed. With a view in the
-              middle of the forest.
+              A triathlon is a multisport race with three continuous and sequential endurance races.
             </p>
             <!-- <div class="py-2">
               <a class="text-blue-700 hover:underline" href="#"
@@ -106,29 +105,20 @@
               class="flex flex-col lg:flex-row my-4 content-center items-center"
             >
               <div class="w-full lg:w-1/2 text-center m-auto">
-                <span class="text-2xl">&#8377;6726</span>
-                <span class="text-l p-2 text-gray-600">for 1 cottage</span>
+                <span class="text-2xl">&#8377;300</span>
+                <span class="text-l p-2 text-gray-600">per Person</span>
               </div>
               <div class="w-full lg:w-1/2 text-center m-auto">
-                <form
-                  id="order"
-                  method="POST"
-                  action="https://localhost:8080/order/api/v1/checkout"
-                >
-                  <input
-                    type="hidden"
-                    id="merchantid"
-                    name="merchantid"
-                    value="61A93"
-                  />
+                <form id="order"  method="POST" action="https://staging.xpresslane.in/order/api/v1/checkout">
+                  <input type="hidden" id="merchantid" name="merchantid" value="61A94"/>
                   <input
                     type="hidden"
                     id="checksum"
                     name="checksum"
-                    value="N0ZFMzhCMjk3OEJCQTFEOFcS8v86VBMhVPALWw2oWEDnj5zhIPLvbj2iPVszNr0X0es9zZ9vFVDiW3R7hgR8kss2y+EcXsZoO6Kc8nNuYWYf52K4AGAtcR1nisxeAs6a7f4l84SC9oB+yTVs2P4G5v0E9QR9ZRPsA2QyjDVYX4OBuft02wKc5hRfrMgIWvTbzN3CLfVxojG1AJG5G2+hEEp1zhnrmbBDMExh7Wc277lH9GdxWPG6o319wnIx7RkTr1fviffZg2hnXuEH+3XaCi7eGkUeQojhzHPqe3qOtJgZxnIqjm4Ztk+3l83z9WhBuFv1VxOWO2IdMje5OO2Ubi55TRzbD5HLLGviZvBe4OSZTCLydIUYzLbzlMeNDWFV6XTtGXB2PxL9XOGg4ij2ojz4FtCqgkg8kWFwCA/5m/I/qLFwsr/TVzryqXThbNyiivz6omgoPnblSH3vzjoBDwv4B45q6H55mD450Rn+SQNvddvCKYRZXvtv3JZ5ToJMv5G41Sg8tfDlGOscSRAeW2LDi0N0DQK5IuKYOMuKqkFWyzTiCB7aDYCKbIuBYTNXVcIHGE6spnscUmkt+fO1EMKoOQcbwLh+D3JfL1wf8ZMVlZYCJKZ0KUh/5LU995OuqPH6ELGB/ir4reZU39oWk135SiBEsBZBOm1XCHu7zkigI62OdE4FSc9dwtWWImaBUQ/+QzZRF08WuqNvK/Wl8ysZMdT7OK3p0CFolHimraxxnDThSpExl7QR1WuZWDxx9ArspLXy8dHboiEGSBeyIrRgmHq8doINaxc/w4W7SKTUC9cFPgi9tCM2vT0rD7RWwlxJ6Mdu+WW95YrHQhJalScUcIvpRDrMwrskcBFLmqVxJRNY/t5uA2R0JbW/7PJUQtg3JeaAj0JLO19hA8cjtko3qR7OhCHCEprsoLMaR0r8QmT5mAQrVzSKN8oNyDFDTXlbDCQp6QmW2oi2brQ6xDEq2K1+hIwH4s/4wQZl1WvYqUuLZP6P6fLIQOlRyVqYCKkkE0jk0xQEzVjhnzDwkDg0D5HBArtEYdzV2yp4HprwMxI8HYfhHHYDxx+4/dmZTu1p02sonrv0EWqCmpHhCc06tLEQ00oNcf077r8i+S0pGMJhyqykl/ERBLQGM6Q7JjBi+ONNfpG39F8tO1aorMUHlaKG6hiJaAWpgpXbXWY7Gtv7AoE7HXonB81s2tKCHyLqTRWjq/FPi9AlNfkuhw=="
+                    value="OTA0RUJBMTk4MDFBQTU4Q8zFxUX1bZJj+CBoQOUDwgp46o6avla/uqnwM+KlAqBShx+DGMxE16y1fXm5cxVvc757b5RfQBhFxE8IiCnFc7SOyJMxeHsOkRkvi7GBu9Ao3fZjoYZvOqW2ELLCZDQseFL/7lO1NSbQXBqVGG6ulyRHm/E5MItYnVAgvXDWq7zNCL3flfBbcEAhQ2XHVvP/shTQd6KVPweDLyQ9UP1Rkx+i6iFTLeyle+EILSkigD266KmUFr3ejh5oYAGe5Wr1h1ao5YQ0gDpLJG+ijcJRFda1NUq2wSbBT6/wtCVoCTB5aXDvVh2Krk0Yvh9JQkBudDd3bZ1JoXjIb63lnALNJuokCt6mYopUFlBaRbMe/dbEFUfNjRLgL+ExJ7haebHbBQLa1DSstObUHUeszBZClulCA6OmQQKo807YSqBz6dBNM4Pl/c9EouOnJJwOKGIOjLi7Dqq5RgGims4HKT1KgQODYlR72bZt3Pj2cgu+bjsbZs/okrDk9cp6rcrrM61PTSdpWRempphU7HXbrssc2avV/RYMmSwkDoqU7rwBNWuJhhCJI0b7le86aUx4HBJSCmwX0lyDZ70Z2TJKfvAePnwOiXd+MF+cAmgxusfTsvwgaTSDLUI8JJcwyAVHCxfFpnMGmkbvM8xV8Yq3lWuyLspNyHA87bKbpgV+nCpNyWAzwizZWhc8jSI2lbB48/wK8zRpM0k9YlTV9T7I1yadO3Asns4WJHVIamCExZqIdN1E3XUP78gLWwirsIILno/tTwZHzi3AfyU6gQA7TrGs+7j5+5VbeFvzTv+0QmImnpFhhLqOOH8IIwk1js1t4DdZY/N4RgiNOrKSnAKhKuxmAo6AS3KQVKioR4u2UJyuylCNohSGoQ1jGWIrL/rDeQzG3zzhSMDK/E3sTQ7e2HCnFNglPc+PXKgh4ri5l7yd4PzwJeHAqCtak79ZI/IQnE/RsSCiM9WVSYcgm2oRZxWS/X7gKclvRExPtJat20o8CeGxDZ8QdkxX+ueNZ4gs8C1Tg6r6DzITtJtLKw4Kh2lfU1ZpnNT0XX7aPpzWNnRfX+bh1Mr54kfOhPWX9QDe7VJuTGXGlvJP+cxahG0n0mQAG+/pVzN4PgPADF/yyZhEwXXmHmjGae6vpMJFZaTnlmWRBBV/2I2K3fCONEjKwRO0dtkD51YPTSo1iRo3MKike5bXa/TRmBOOS4adecFzgM5TNQ=="
                   />
                   <button
-                    type="button"
+                    type="submit"
                     class="xpressbtn xpressbtn-primary xpressbtn-rounded"
                   >
                     Checkout on
@@ -194,15 +184,15 @@
             </div>
             <div class="flex mb-4 pt-2 border-t">
               <div class="w-1/2 text-xl h-6">Subtotal</div>
-              <div class="w-1/2 text-xl h-6">&#8377;5700.00</div>
+              <div class="w-1/2 text-xl h-6">&#8377;300.00</div>
             </div>
-            <div class="flex mb-4">
+            <!-- <div class="flex mb-4">
               <div class="w-1/2  h-6">Tax (5%)</div>
               <div class="w-1/2  h-6">&#8377;1026.00</div>
-            </div>
+            </div> -->
             <div class="flex mb-4">
               <div class="w-1/2 text-xl font-semibold h-8">Grand Total</div>
-              <div class="w-1/2 text-xl font-semibold h-8">&#8377;6726.00</div>
+              <div class="w-1/2 text-xl font-semibold h-8">&#8377;300.00</div>
             </div>
           </div>
         </div>
@@ -218,7 +208,7 @@
             />
             <h3 class="text-2xl mb-3 font-heading">Secure</h3>
             <p class="text-gray-500 leading-relaxed">
-              Secure environment in a jungle riverbed.
+              Secure payments through Xpresslane
             </p>
           </div>
           <div class="md:w-1/2 py-4 md:px-10 mb-4 md:mb-0 md:border-l">
@@ -227,9 +217,9 @@
               src="placeholders/icons/cloud-tools.svg"
               alt=""
             />
-            <h3 class="text-2xl mb-3 font-heading">Adventure</h3>
+            <h3 class="text-2xl mb-3 font-heading">Elita ESCape</h3>
             <p class="text-gray-500 leading-relaxed">
-              Be in the midst of jungle with lots of adventurous activities.
+              Compete with the best Endurance Atheletes around the world. Its all about finishing the race.
             </p>
           </div>
         </div>
@@ -237,18 +227,18 @@
 
       <footer class="flex flex-wrap items-center justify-between p-4">
         <div class="w-full lg:w-auto lg:mr-6 mb-4 lg:mb-0 text-center">
-          &copy 2020 Jungle Vacation
+          &copy 2019 Elita ESC2019
         </div>
         <div class="flex flex-col lg:flex-row items-center w-full lg:w-auto">
           <div class="mx-auto lg:mx-0 lg:ml-auto">
             <a
               class="inline-block mt-0 text-blue-900 hover:text-blue-700"
               href="#"
-              >Cottages</a
+              >Events</a
             ><a
               class="inline-block mt-0 ml-8 text-blue-900 hover:text-blue-700"
               href="#"
-              >Customers</a
+              >Registrations</a
             >
           </div>
         </div>
